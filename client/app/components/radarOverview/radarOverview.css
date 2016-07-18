@@ -1,43 +1,45 @@
-radar-overview {
+.valign, radar-overview > ul > li a {
   position: relative;
-  overflow: hidden;
+  top: 0%;
+  transform: translateY(-40%);
+  left: 50%;
+  transform: translateX(-50%); }
+
+.square {
+  position: relative;
   display: block;
-  padding: 15px; }
+  width: 50%;
+  background-color: grey; }
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%; }
 
 radar-overview > ul {
   display: block;
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0; }
 
 radar-overview > ul > li {
   float: left;
   display: block;
-  width: 50%;
-  padding: 0px;
   background-color: #00AA00; }
 
-radar-overview > ul > li:hover, radar-overview > ul > li:hover {
+radar-overview > ul > li:hover {
   background-color: #0b97c4; }
 
-radar-overview > ul > li a {
-  height: 150px;
-  display: block;
-  line-height: 150px;
-  text-align: center;
-  color: white;
-  font-size: 24px;
-  text-decoration: none; }
+radar-overview > ul > li .content {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
 
 radar-overview > ul > li a {
-  height: 150px;
-  display: block;
-  line-height: 150px;
   text-align: center;
   color: white;
   font-size: 24px;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
 
 radar-overview > ul > li a:hover {
   text-decoration: none; }
