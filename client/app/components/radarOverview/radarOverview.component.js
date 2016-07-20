@@ -4,9 +4,11 @@ import './radarOverview.scss';
 
 let radarOverviewComponent = {
   restrict: 'E',
+  transclude: true,
   bindings: {},
   template,
-  controller
+  controller,
+  controllerAs: 'vm'
 };
 
 export default radarOverviewComponent;

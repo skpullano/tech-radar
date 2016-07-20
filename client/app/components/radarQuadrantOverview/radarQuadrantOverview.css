@@ -1,0 +1,18 @@
+.quadrant-overview-circle {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  border-radius: 100px;
+  border: 100px solid aqua;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari */
+  transform: rotate(45deg); }
+
+/*# sourceMappingURL=radarQuadrantOverview.css.map */

@@ -7,7 +7,12 @@
     <div class="row-fluid">
       <div class="col-md-5">
         <div class="row-fluid">
-          <radar-overview></radar-overview>
+          <radar-overview rings="vm.rings" ng-cloak>
+              <radar-quadrant-overview name="Techniques"></radar-quadrant-overview>
+              <radar-quadrant-overview name="Tools"></radar-quadrant-overview>
+              <radar-quadrant-overview name="Platforms"></radar-quadrant-overview>
+              <radar-quadrant-overview name="Languages & Frameworks"></radar-quadrant-overview>
+          </radar-overview>
         </div>
       </div>
       <div class="col-md-7"> Something</div>
