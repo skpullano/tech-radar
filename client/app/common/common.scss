@@ -1,1 +1,29 @@
 $em: 16px;
+
+.valign {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  left:50%;
+  transform: translateX(-50%);
+}
+.square {
+  position: relative;
+  display: block;
+  width: 50%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.absolute-center {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}

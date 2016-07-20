@@ -1,27 +1,10 @@
 @import "../../common/common";
 
-.valign {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-40%);
-  left:50%;
-  transform: translateX(-50%);
-}
-.square {
-  position: relative;
-  display: block;
-  width: 50%;
-  background-color: grey;
-}
-
-.square:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
 
 radar-overview {
-
+  position: relative;
+  overflow: hidden;
+  display: block;
 }
 
 radar-overview > ul {
@@ -29,34 +12,44 @@ radar-overview > ul {
   margin:0;
   padding: 0;
 }
-radar-quadrant-overview > li {
-  float:left;
-  display: block;
-  background-color: #00AA00;
-}
 
-radar-quadrant-overview > li:hover {
-  background-color: #0b97c4;
-}
+.quadrant-overview-circle {
+  @extend .absolute-center;
+  height:35%;
 
-radar-quadrant-overview > li .content {
-  position: absolute;
+}
+.quadrant-overview-circle.circle4 {
   width: 100%;
-  height:100%;
+  padding-bottom: 100%;
+  z-index: 1;
+  background-color: #0000AA;
+  border-radius: 50%;
 }
+.quadrant-overview-circle.circle3 {
+  width: 80%;
+  padding-bottom: 80%;
+  z-index: 2;
+  background-color: #0b97c4;
+  border-radius: 50%;
 
-radar-quadrant-overview > li a {
-  text-align: center;
-  color:white;
-  font-size: $em * 1.5;
-  text-decoration: none;
-  @extend .valign;
-  display: block;
 }
+.quadrant-overview-circle.circle2 {
+  width: 60%;
+  padding-bottom: 60%;
+  z-index: 3;
+  background-color: #00cc99;
+  border-radius: 50%;
 
 
-radar-quadrant-overview > li a:hover {
-  text-decoration: none;
+}
+.quadrant-overview-circle.circle1 {
+  width: 40%;
+  padding-bottom: 40%;
+  z-index: 4;
+  background-color: #2b542c;
+  border-radius: 50%;
+
+
 }
 
 
