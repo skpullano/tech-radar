@@ -5,17 +5,17 @@
 <main>
   <div class="container-fluid">
     <div class="row-fluid">
-      <div class="col-md-5">
-        <div class="row-fluid">
-          <radar-overview rings="vm.rings" ng-cloak>
-              <radar-quadrant-overview name="Techniques"></radar-quadrant-overview>
-              <radar-quadrant-overview name="Tools"></radar-quadrant-overview>
-              <radar-quadrant-overview name="Platforms"></radar-quadrant-overview>
-              <radar-quadrant-overview name="Languages & Frameworks"></radar-quadrant-overview>
+        <div class="col-xs-5">
+          <radar-overview ng-cloak>
+              <radar-quadrant-overview quad-id="1" name="Techniques"></radar-quadrant-overview>
+              <radar-quadrant-overview quad-id="2" name="Tools"></radar-quadrant-overview>
+              <radar-quadrant-overview quad-id="3" name="Platforms"></radar-quadrant-overview>
+              <radar-quadrant-overview quad-id="4" name="Languages & Frameworks"></radar-quadrant-overview>
           </radar-overview>
         </div>
-      </div>
-      <div class="col-md-7"> Something</div>
+        <div class="col-xs-7">
+            Something
+        </div>
     </div>
   </div>
 </main>
