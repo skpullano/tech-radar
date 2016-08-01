@@ -58,7 +58,9 @@
     "yargs": "^3.9.0"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "dev" : "gulp",
+    "build" : "gulp webpack"
   },
   "keywords": [
     "angular",

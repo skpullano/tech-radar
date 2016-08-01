@@ -1,6 +1,6 @@
 class RadarQuadrantMapController {
   constructor() {
-    this.name = 'radarQuadrantMap';
+    
   }
 }
 

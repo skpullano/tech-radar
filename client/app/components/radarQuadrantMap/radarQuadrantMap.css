@@ -1,3 +1,22 @@
+.quadrant-container {
+  width: 500px;
+  height: 500px;
+  float: left; }
 
+.quadrant-container.topLeft {
+  border-right: 5px solid #ccc;
+  border-bottom: 5px solid #ccc; }
+
+.quadrant-container.topRight {
+  border-left: 5px solid #ccc;
+  border-bottom: 5px solid #ccc; }
+
+.quadrant-container.bottomLeft {
+  border-right: 5px solid #ccc;
+  border-top: 5px solid #ccc; }
+
+.quadrant-container.bottomRight {
+  border-top: 5px solid #ccc;
+  border-left: 5px solid #ccc; }
 
 /*# sourceMappingURL=radarQuadrantMap.css.map */

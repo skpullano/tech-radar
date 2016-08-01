@@ -4,9 +4,12 @@ import './radarQuadrantMap.scss';
 
 let radarQuadrantMapComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    quadrantType: "@"
+  },
   template,
-  controller
+  controller,
+  controllerAs: 'vm'
 };
 
 export default radarQuadrantMapComponent;
